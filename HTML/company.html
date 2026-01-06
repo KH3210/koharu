@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!-- ウェブページの文字エンコーディングを指定するために使用されます。 -->
+    <meta charset="UTF-8" />
+    <!-- ウェブページのビューポート（表示領域）の設定を指定します。 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ウェブページのタイトルに使用されます。 -->
+    <title>company | うつわ屋こはる</title>
+    <!-- ウェブページの簡潔な説明や概要を提供するために使用されます。 -->
+    <meta name="description" content="会社概要 | うつわ屋こはるオンラインショップ" />
+    <!-- モバイルブラウザが電話番号の検出やリンク化を行わないように設定しています。 -->
+    <meta name="format-detection" content="telephone=no" />
+    <!-- ファビコンを設定しています。 -->
+    <link rel="shortcut icon" href="/image/favicon.ico" />
+    <!-- font-awesomeを使用しています。 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- reset.cssは、destyleを使用しています。 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
+    <!-- スタイルシート（css）を呼び出しています -->
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body class="body">
+    <!-- ここから記述します。 -->
+    <!-- header -->
+    <header class="header">
+        <div class="header-inner u-wrapper">
+            <a href="/HTML/index.html">
+                <img src="/image/logo-white.png" alt="うつわ屋こはるロゴ" class="header-logo">
+            </a>
+
+            <button class="hamburger" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <nav class="global-nav" aria-label="メインナビゲーション">
+            <div class="global-nav-inner">
+
+                <a href="/HTML/index.html">
+                    <img src="/image/logo.png" alt="うつわ屋こはるロゴ">
+                </a>
+
+                <ul class="global-nav-list">
+                    <li><a href="/HTML/index.html">ホーム</a></li>
+                    <li><a href="/HTML/products.html">商品一覧</a></li>
+                    <li><a href="/HTML/company.html">会社概要</a></li>
+                    <li><a href="/HTML/about.html">私たちについて</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="nav-mask"></div>
+    </header>
+    <!-- /header -->
+
+    <!-- main -->
+    <section class="company u-wrapper">
+        <h1 class="main-title">会社概要</h1>
+        <div class="company-inner">
+            <div class="company-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1370.7219699947227!2d142.28308537823665!3d43.768533035915006!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0cef3e69c31c5b%3A0x58b6acc8afe8da5a!2z44CSMDcwLTgwNzIg5YyX5rW36YGT5pet5bed5biC5Y-w5aC077yS5p2h77yS5LiB55uu!5e0!3m2!1sja!2sjp!4v1767409419014!5m2!1sja!2sjp"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="company-info">
+                <dl class="company-info-list">
+                    <div class="company-info-row">
+                        <dt>社名</dt>
+                        <dd>うつわ屋こはる</dd>
+                    </div>
+                    <div class="company-info-row">
+                        <dt>住所</dt>
+                        <dd>〒070-8072 北海道旭川市台場2条2丁目</dd>
+                    </div>
+                    <div class="company-info-row">
+                        <dt>設立</dt>
+                        <dd>2020年7月</dd>
+                    </div>
+                    <div class="company-info-row">
+                        <dt>資本金</dt>
+                        <dd>1000万円</dd>
+                    </div>
+                    <div class="company-info-row">
+                        <dt>従業員数</dt>
+                        <dd>20名</dd>
+                    </div>
+                    <div class="company-info-row">
+                        <dt>事業内容</dt>
+                        <dd>陶器の製造・販売</dd>
+                    </div>
+                </dl>
+            </div>
+        </div>
+    </section>
+    <!-- /main -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-left">
+                <a href="/HTML/index.html" class="footer-logo">
+                    <img src="/image/logo.png" alt="うつわ屋こはる">
+                </a>
+
+                <nav class="footer-nav" aria-label="フッターナビゲーション">
+                    <ul class="footer-nav-list">
+                        <li class="footer-nav-text"><a href="/HTML/index.html">ホーム</a></li>
+                        <li class="footer-nav-text"><a href="/HTML/products.html">商品一覧</a></li>
+                        <li class="footer-nav-text"><a href="/HTML/company.html">会社概要</a></li>
+                        <li class="footer-nav-text"><a href="/HTML/about.html">私たちについて</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <p class="footer-copy">
+                ©うつわ屋こはる All Right Reserved
+            </p>
+        </div>
+    </footer>
+    <!-- footer -->
+
+    <!-- JSを呼び出しています -->
+    <script src="/js/menu.js"></script>
+</body>
+
+</html>

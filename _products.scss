@@ -1,0 +1,61 @@
+@use "setting";
+
+
+.main-title {
+    @include setting.mainTitle
+}
+
+.main-title::before {
+    content: "";
+    width: 40px;
+    height: 1.5px;
+    background-color: #fff;
+    margin-right: 24px;
+}
+
+.product-inner {
+    margin-bottom: 120px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+}
+
+.popular-inner {
+    margin-bottom: 120px;
+}
+
+.popular-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+
+
+@include setting.mq(tab) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px 8px;
+    }
+
+    .popular-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .main-title::before {
+        width: 32px;
+        margin-right: 16px;
+    }
+
+    .product-inner {
+        margin-bottom: 80px;
+    }
+
+    .popular-inner {
+        margin-bottom: 80px;
+    }
+}
