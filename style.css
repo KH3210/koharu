@@ -667,14 +667,6 @@ grid-template-areas:
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-bottom: 80px;
-  }
-  .item-detail-title {
-    font-size: 24px;
-    margin-bottom: 12px;
-  }
-  .item-detail-price {
-    font-size: 20px;
   }
 }
 .main-title {

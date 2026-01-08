@@ -1,3 +1,5 @@
+@use "setting";
+
 .item-detail-inner {
     display: flex;
     gap: 48px;
@@ -44,7 +46,7 @@
     margin-bottom: 48px;
 }
 
-.add-cart-btn i{
+.add-cart-btn i {
     padding-left: 4px;
 }
 
@@ -59,4 +61,22 @@
     font-size: 16px;
     margin-right: 8px;
     line-height: 1.9;
+}
+
+
+@include setting.mq(tab) {
+    .item-detail-inner {
+        display: flex;
+        flex-direction: column;
+        margin-bottom:80px ;
+    }
+
+    .item-detail-title {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    .item-detail-price {
+    font-size: 20px;
+}
 }
