@@ -271,7 +271,11 @@ grid-template-areas:
 --------------------------*/
 .product-image-large {
   width: 100%;
-  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; /* テキスト以外の余白をすべて画像が埋める */
+  min-height: 0; /* 画像が要素を突き破るのを防ぐための設定 */
+  height: auto; /* <a>タグの100%を解除 */
 }
 
 .product-image img {
@@ -292,8 +296,26 @@ grid-template-areas:
 }
 
 .front-item-large {
-  grid-column: 1/2;
-  grid-row: 1/3;
+  grid-column: 1/2; /* 1列目に配置 */
+  grid-row: 1/3; /* 1〜2行目をまたぐ */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.product-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%; /* グリッドセル2個分の高さを確保 */
 }
 
 .item-name {
@@ -496,10 +518,9 @@ grid-template-areas:
 }
 
 .company-map {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 48%;
-          flex: 0 0 48%;
-  /*親の横幅 × 48% */
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; /* 兄弟要素と幅を均等に分ける */
   aspect-ratio: 1/1;
   /* 正方形 */
 }
@@ -511,6 +532,10 @@ grid-template-areas:
 
 .company-info {
   color: #fff;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; /* 兄弟要素と幅を均等に分ける */
 }
 
 .company-info-list {
@@ -527,7 +552,6 @@ grid-template-areas:
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 550px;
   padding: 20px 0;
   border-bottom: 1px solid #cacaca;
 }
@@ -537,18 +561,12 @@ grid-template-areas:
 }
 
 .company-info-row dt {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 180px;
-          flex: 0 1 180px;
-  /* ラベル幅を固定 */
+  width: 30%;
   padding: 0 10px;
 }
 
 .company-info-row dd {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  /* 残りの横幅全部 */
+  width: 70%;
 }
 
 @media screen and (max-width: 900px) {

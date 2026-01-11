@@ -8,8 +8,7 @@
 }
 
 .company-map {
-    flex: 0 0 48%;
-    /*親の横幅 × 48% */
+    flex: 1;  /* 兄弟要素と幅を均等に分ける */
     aspect-ratio: 1/1;
     /* 正方形 */
 }
@@ -21,6 +20,8 @@
 
 .company-info {
     color: #fff;
+    width: 100%;
+    flex: 1;  /* 兄弟要素と幅を均等に分ける */
 }
 
 .company-info-list {
@@ -30,7 +31,6 @@
 
 .company-info-row {
     display: flex;
-    width: 550px;
     padding: 20px 0;
     border-bottom: 1px solid #cacaca;
 }
@@ -40,14 +40,12 @@
 }
 
 .company-info-row dt {
-    flex: 0 1 180px;
-    /* ラベル幅を固定 */
+   width: 30%;
     padding: 0 10px;
 }
 
 .company-info-row dd {
-    flex: 1;
-    /* 残りの横幅全部 */
+   width: 70%;
 }
 
 
